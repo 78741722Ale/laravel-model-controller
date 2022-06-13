@@ -10228,3 +10228,63 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Classi del main */
+/* Regola Generale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+* Mixin required for recalling the measures of the root element
+* $width => Width of the container
+* $height => Height of the container
+* $background => Background Color
+*/
+/* Regola al body (font - family) */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#site_header {
+  width: 100%;
+  height: 100px;
+  background-color: lightgray;
+}
+
+#site_main {
+  width: 100%;
+  height: calc(100% - 200px);
+  background-color: transparent;
+}
+
+#site_footer {
+  width: 100%;
+  height: 100px;
+  background-color: lightgray;
+}
+
+.flex_cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.col-2 {
+  height: 200px !important;
+  border: 2px solid black;
+}

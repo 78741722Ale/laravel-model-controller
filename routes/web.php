@@ -19,4 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 /* La Rintraccio grazie al page controller */
 Route::get('/', 'PageController@index')->name('home');
+/* Alla rotta /movies, collego il suo controller. Avrà un nome, ovvero:
+movies => nome cartella
+index => nome file php  */
 Route::get('/movies', 'MovieController@index')->name('movies.index');

@@ -11,18 +11,18 @@
 <body>
 
     <!-- SiteHeader -->
-    <header class="bg-warning h-25">
-        Io sono l'header
+    <header class="flex_cent" id="site_header">
+        <h2 class="text-uppercase mb-0">Io sono l'header</h2>
     </header>
     <!-- SiteMain -->
-    <main>
+    <main class="flex_cent" id="site_main">
         <!-- Con lo Yield io posso richiamare la sezione richiesta.
         Qua richiamo quella presente in /movies  -->
         @yield('content')
     </main>
     <!-- SiteFooter -->
-    <header>
-        Io sono il footer
+    <header class="flex_cent" id="site_footer">
+        <h2 class="text-uppercase mb-0">Io sono il footer</h2>
     </header>
 </body>
 </html>

@@ -1,2 +1,58 @@
 //
 @use 'bootstrap';
+
+/* Classi del main */
+
+/* Regola Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/**
+* Mixin required for recalling the measures of the root element
+* $width => Width of the container
+* $height => Height of the container
+* $background => Background Color
+*/
+
+@mixin ContentDimensions($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+/* Regola al body (font - family) */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    @include ContentDimensions(100vw, 100vh, transparent);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#site_header {@include ContentDimensions(100%, 100px, lightgray)}
+#site_main {@include ContentDimensions(100%, calc(100% - 200px), transparent)}
+#site_footer {@include ContentDimensions(100%, 100px, lightgray)}
+
+
+@mixin positionFlex($display, $justify, $align, $dir) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+}
+
+.flex_cent {@include positionFlex(flex, center, center, row);}
+.flex_start {@include positionFlex(flex, flex-start, center, column);}
+
+.col-2 {
+    height: 200px !important;
+    border: 2px solid black;
+}
+
+
+
+
+
+
