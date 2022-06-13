@@ -10,6 +10,7 @@
         <div class="col-2 p-0 flex_cent">
             <div class="card border-0 w-100">
                 <!-- Title -->
+                <!-- Recupero dati con {{nome del singolo -> nome attributo (solitamente in #attributes) }} -->
                 <h6 class="mb-2">Title : <strong>{{$movie->title}}</strong></h6>
                 <!-- Original Title -->
                 <h6>Original Title : <strong>{{$movie->original_title}}</strong></h6>
