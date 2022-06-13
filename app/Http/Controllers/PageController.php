@@ -8,6 +8,6 @@ class PageController extends Controller
 {
     /* La rotta per la page home è questa */
     public function index() {
-        return view('welcome');
+        return view('home');
     }
 }

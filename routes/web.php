@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 /* La Rintraccio grazie al page controller */
-Route::get('/', 'PageController@index');
+Route::get('/', 'PageController@index')->name('home');
+Route::get('/movies', 'MovieController@index')->name('movies.index');
